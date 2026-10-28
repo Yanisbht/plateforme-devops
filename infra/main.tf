@@ -15,4 +15,5 @@ provider "helm" {
 module "argocd" {
   source        = "./modules/argocd"
   version_chart = var.version_argocd
+  depot         = var.depot
 }

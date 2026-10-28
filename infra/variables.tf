@@ -7,3 +7,7 @@ variable "version_argocd" {
   type    = string
   default = "10.10.3"
 }
+
+variable "depot" {
+  type = string
+}
