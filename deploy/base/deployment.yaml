@@ -18,13 +18,17 @@ spec:
         ports:
         - containerPort: 8080
           name: http
-        readinessProbe:
-          httpGet:
-            path: /healthz
-            port: http
         resources:
           requests:
             cpu: 50m
             memory: 64Mi
           limits:
             memory: 128Mi
+        envFrom:
+        - secretRef:
+            name: api-secret
+            optional: true
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: http
