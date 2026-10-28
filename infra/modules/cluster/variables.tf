@@ -1,0 +1,3 @@
+variable "nom" {
+  type = string
+}
