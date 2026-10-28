@@ -5,7 +5,7 @@ resources:
 - ../../base
 images:
 - name: api
-  newName: ghcr.io/yanisbht/plateforme-devops/api
+  newName: ghcr.io/yanisbht/api
   newTag: 
 replicas:
 - name: api
