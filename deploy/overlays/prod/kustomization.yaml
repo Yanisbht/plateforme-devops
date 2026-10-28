@@ -6,7 +6,7 @@ resources:
 images:
 - name: api
   newName: ghcr.io/yanisbht/api
-  newTag: 
+  newTag: 2f1adf8c
 replicas:
 - name: api
   count: 2
